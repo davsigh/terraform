@@ -18,5 +18,5 @@ Under Backend.rf , Please change the terraform state file. I have mentioned belo
 
 - Step 4:
 Under AWS_Instances folder, please also change the "terraform state file path" which you mentioned in above "STEP 3"
-- Step5
+- Step 5:
 Security_group.tf , only port 80 & 22 is allowed. You can change as per the requirement
