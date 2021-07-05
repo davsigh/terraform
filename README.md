@@ -15,7 +15,7 @@ Under Backend.rf , Please change the terraform state file. I have mentioned belo
 /Users/dasingh/Documents/CHEF-Trainings/terraform_base/
 
 Step 4:
-Under AWS_Instances folder, please also change the "terraform state file path" which you mentioned in STEP 3
+Under AWS_Instances folder, please also change the "terraform state file path" which you mentioned in above "STEP 3"
 
 
 
