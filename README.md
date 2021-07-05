@@ -1,12 +1,12 @@
 ### Features
 - Step 1: 
-Create new profile & Add AWS keys in cat ~/.aws/credentials 
+    -  Create new profile & Add AWS keys in cat ~/.aws/credentials 
 [default]
-aws_access_key_id = **************
-aws_secret_access_key = ******************************
+aws_access_key_id = ******
+aws_secret_access_key = ***
 [Davinder]
-aws_access_key_id = **************************
-aws_secret_access_key = **************************
+aws_access_key_id = ********
+aws_secret_access_key = *****
 
 - Step 2: 
 Create SSH keys and copy public under "Networking" variables.tf file
