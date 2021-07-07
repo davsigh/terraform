@@ -1,0 +1,9 @@
+DS_Store
+.terraform
+terraform.tfvars
+terraform.tfstate.backup
+aws-security/
+attributes.yml
+*.lock.json
+terraform.tfstate*
+Keys-AWS/

@@ -1,12 +1,12 @@
 output "Instance_Name" {
-    value = aws_instance.Davinder_Webserver.id
+    value = module.webserver.Instance_Name
 }
 output "Instance_Type" {
-    value = aws_instance.Davinder_Webserver.instance_type
+    value = module.webserver.Instance_Type
 }
 output "AMI_ID" {
-    value = aws_instance.Davinder_Webserver.ami
+    value = module.webserver.AMI_ID
 }
 output "Public_IP" {
-    value = aws_instance.Davinder_Webserver.public_ip
+    value = module.webserver.Public_IP
 }

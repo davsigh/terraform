@@ -4,7 +4,8 @@ data "terraform_remote_state" "terraform_state" {
     path = "/Users/dasingh/Documents/CHEF-Trainings/terraform_base/network-terraform.tfstate"
    }
 }
-resource "aws_instance" "Davinder_Webserver" {
+module "webserver" {
+  source = "/Users/dasingh/Documents/CHEF-Trainings/terraform_base/Terraform_final/AWS_Instances/modules/ec2_instance"
     ami = var.ami_id
     instance_type = var.instance_type
     subnet_id = data.terraform_remote_state.terraform_state.outputs.Subnet_ID
