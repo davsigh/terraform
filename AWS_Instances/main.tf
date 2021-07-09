@@ -6,12 +6,13 @@ data "terraform_remote_state" "terraform_state" {
 }
 module "webserver" {
   source = "/Users/dasingh/Documents/CHEF-Trainings/terraform_base/Terraform_final/AWS_Instances/modules/ec2_instance"
-    ami = var.ami_id
-    instance_type = var.instance_type
-    subnet_id = data.terraform_remote_state.terraform_state.outputs.Subnet_ID
-    key_name = data.terraform_remote_state.terraform_state.outputs.MY_KEY_PAIR
-    vpc_security_group_ids = data.terraform_remote_state.terraform_state.outputs.SG
-    tags = {
+    ami_module = var.ami_id
+    instance_type_module = var.instance_type
+    instance_count_web_module = var.instance_count_main
+    subnet_id_module = data.terraform_remote_state.terraform_state.outputs.Subnet_ID
+    key_name_module = data.terraform_remote_state.terraform_state.outputs.MY_KEY_PAIR
+    vpc_security_group_ids_module = data.terraform_remote_state.terraform_state.outputs.SG
+    tags_module = {
     Name = var.tags_vm_name
     X-Dept = var.tags_Dept
     X-Contact = var.tags_Contact

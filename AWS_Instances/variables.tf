@@ -37,6 +37,6 @@ variable "instance_type" {
 variable "tags_vm_name" {
   default = "webserver"
 }
-variable "instacne_count" {
+variable "instance_count_main" {
   default = 2
 }
