@@ -18,5 +18,10 @@ Under Backend.rf , Please change the terraform state file. I have mentioned belo
 
 - Step 4:
 Under AWS_Instances folder, please also change the "terraform state file path" which you mentioned in above "STEP 3"
+
 - Step 5:
 Security_group.tf , only port 80 & 22 is allowed. You can change as per the requirement
+
+- Step 6:
+If you create more EC2 Instacnes then go to AWS_Instances/variables.tf and add change the default vaule of "instance_count_main" variable.
+
