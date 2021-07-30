@@ -15,6 +15,13 @@ resource "aws_security_group" "my_sg" {
       protocol = "tcp"
       to_port = 80
     } 
+    ingress  {
+      cidr_blocks = [ "0.0.0.0/0" ]
+      description = "HTTPS Port"
+      from_port = 443
+      protocol = "tcp"
+      to_port = 443
+    } 
     egress {
       cidr_blocks = [ "0.0.0.0/0" ]
       description = "outbound allowed all traffic"
